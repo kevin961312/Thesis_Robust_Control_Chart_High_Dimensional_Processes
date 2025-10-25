@@ -1,5 +1,4 @@
-# Thesis: Robust Control Chart for High Dimensional Processes
-
+# Tesis: Carta de Control Robusta para Observaciones Individuales en Fase I para Procesos de Alta Dimensionalidad
 Este repositorio contiene la implementación de cartas de control robustas para procesos de alta dimensionalidad desarrollada como parte de una tesis de investigación.
 
 ## Estructura del Proyecto
