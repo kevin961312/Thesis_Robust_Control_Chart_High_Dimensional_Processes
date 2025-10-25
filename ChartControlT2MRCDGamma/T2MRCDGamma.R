@@ -19,7 +19,7 @@ source(here::here("./SignalProbability.R"))
 source(here::here("./SimulationT2ChartGammaMedia.R"))
 set.seed(123)
 
-# Parameters Simulación
+# Parameters Simulation
 registerDoParallel(5)
 
 Observation <- 100

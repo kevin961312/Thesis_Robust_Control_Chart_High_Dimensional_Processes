@@ -20,7 +20,7 @@ source(here::here("./SignalProbability.R"))
 source(here::here("./SimulationT2ChartMedia.R"))
 set.seed(123)
 
-# Parameters Simulación
+# Parameters Simulation
 registerDoParallel(5)
 Observation <- 100
 NumberVariable <- 250
@@ -33,7 +33,6 @@ rows <- 1:NumberVariable
 cols <- 1:NumberVariable
 
 SigmaCorr <- outer(rows, cols, FUN = fun)
-# SigmaCorr = randcorr(NumberVariable)
 mu <- rep(0, NumberVariable)
 AlphaMRCD <- 0.50
 AlphaPFA <- 0.05
