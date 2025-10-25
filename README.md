@@ -1,50 +1,50 @@
-# Tesis: Carta de Control Robusta para Observaciones Individuales en Fase I para Procesos de Alta Dimensionalidad
-Este repositorio contiene la implementación de cartas de control robustas para procesos de alta dimensionalidad desarrollada como parte de una tesis de investigación.
+# Thesis: Robust Control Chart for Individual Observations in Phase I for High-Dimensional Processes
+This repository contains the implementation of robust control charts for high-dimensional processes developed as part of a research thesis.
 
-## Estructura del Proyecto
+## Project Structure
 
-El proyecto está organizado en dos carpetas principales, cada una enfocada en diferentes distribuciones estadísticas:
+The project is organized into two main folders, each focusing on different statistical distributions:
 
 ### ChartControlT2MRCDNormal/
-Esta carpeta contiene la implementación para datos con distribución normal.
+This folder contains the implementation for normally distributed data.
 
-**Archivo principal:** `T2MRCDNormal.R`
+**Main file:** `T2MRCDNormal.R`
 
-Archivos de soporte:
-- `AlgorithmEBADI.R` - Algoritmo EBADI
-- `AlgorithmRoMDP.R` - Algoritmo RoMDP
-- `MethodUCLKernel.R` - Método UCL Kernel
-- `SignalProbability.R` - Cálculo de probabilidades de señal
-- `SimulationT2ChartMedia.R` - Simulaciones de carta T²
+Support files:
+- `AlgorithmEBADI.R` - EBADI algorithm
+- `AlgorithmRoMDP.R` - RoMDP algorithm
+- `MethodUCLKernel.R` - UCL Kernel method
+- `SignalProbability.R` - Signal probability calculation
+- `SimulationT2ChartMedia.R` - T2 chart simulations
 
 ### ChartControlT2MRCDGamma/
-Esta carpeta contiene la implementación para datos con distribución gamma.
+This folder contains the implementation for gamma-distributed data.
 
-**Archivo principal:** `T2MRCDGamma.R`
+**Main file:** `T2MRCDGamma.R`
 
-Archivos de soporte:
-- `AlgorithmEBADI.R` - Algoritmo EBADI
-- `AlgorithmRoMDP.R` - Algoritmo RoMDP
-- `MethodUCLKernel.R` - Método UCL Kernel
-- `SignalProbability.R` - Cálculo de probabilidades de señal
-- `SimulationT2ChartGammaMedia.R` - Simulaciones de carta T² para distribución gamma
+Supporting files:
+- `AlgorithmEBADI.R` - EBADI algorithm
+- `AlgorithmRoMDP.R` - RoMDP algorithm
+- `MethodUCLKernel.R` - UCL Kernel method
+- `SignalProbability.R` - Signal probability calculation
+- `SimulationT2ChartGammaMedia.R` - T² chart simulations for gamma distribution
 
-## Uso
+## Usage
 
-Para ejecutar cada proyecto:
+To run each project:
 
-1. **Para distribución normal:** Ejecute el archivo `ChartControlT2MRCDNormal/T2MRCDNormal.R`
-2. **Para distribución gamma:** Ejecute el archivo `ChartControlT2MRCDGamma/T2MRCDGamma.R`
+1. **For normal distribution:** Run the file `ChartControlT2MRCDNormal/T2MRCDNormal.R`
+2. **For gamma distribution:** Run the file `ChartControlT2MRCDGamma/T2MRCDGamma.R`
 
-## Descripción
+## Description
 
-Este trabajo implementa cartas de control T² robustas utilizando el estimador MRCD (Minimum Regularized Covariance Determinant) para procesos multivariados de alta dimensionalidad. Los algoritmos incluyen métodos robustos de detección de puntos atípicos y estimación de parámetros para mejorar el rendimiento de las cartas de control en presencia de datos contaminados.
+This work implements robust T² control charts using the MRCD (Minimum Regularized Covariance Determinant) estimator for high-dimensional multivariate processes. The algorithms include robust outlier detection and parameter estimation methods to improve the performance of control charts in the presence of contaminated data.
 
-## Requisitos
+## Requirements
 
-- R (versión recomendada: 4.0 o superior)
-- Paquetes de R necesarios (especificados en cada archivo principal)
+- R (recommended version: 4.0 or higher)
+- Required R packages (specified in each main file)
 
-## Autor
+## Author
 
-Desarrollado como parte de una tesis de investigación sobre cartas de control robustas para procesos de alta dimensionalidad.
+Developed as part of a research thesis on robust control charts for high-dimensional processes.
